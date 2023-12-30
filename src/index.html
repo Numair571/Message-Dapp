@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Message Dapp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br/> 
+<div class="container">
+  <h2>Store Message</h2>
+  <p>Storing Message through Ethereum Blockchain Network</p>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <input class="form-control" type="text" id="msgValue" name="msg" placeholder="Enter Message" required/>
+        <Br/>
+        <button class="btn btn-warning btn-submit">Submit</button>
+    </div>
+  </div>
+</div>
+<br/><br/>
+<div class="container">
+  <h2>Message Preview Box</h2>
+  <p>Following is the message stored in the Blockchain Network</p>            
+  <center><h2 id="msgpreview" style="color:red"></h2></center> <br/>
+  <center><p>Your address is <b id="add"></b></p></center>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
